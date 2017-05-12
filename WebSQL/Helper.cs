@@ -10,7 +10,7 @@ namespace WebSQL
 {
     public class Helper
     {
-        static string ConnectionString = "Data Source=DESKTOP-KL9U024; Initial Catalog=SklepMuzycznyV2;Integrated Security=SSPI"; //important!!!
+        public static string ConnectionString = "Data Source=DESKTOP-KL9U024; Initial Catalog=SklepMuzycznyV2;Integrated Security=SSPI"; //important!!!
 
         public static void Select(GridView Grid, string query)
         {

@@ -10,6 +10,8 @@ namespace WebSQL
 {
     public partial class _Default : Page
     {
+        //w sesji przechować jaki uzyttkownik jest zalogowany
+        x
         protected void Page_Load(object sender, EventArgs e)
         { 
         }
@@ -17,12 +19,22 @@ namespace WebSQL
         {
             string text = Login1.UserName + Login1.Password;
             if (!tryConnectAsBoss(Login1.UserName, Login1.Password))
+            {
                 if (!tryConnectAsAdmin(Login1.UserName, Login1.Password))
+                {
                     if (!tryConnectAsClient(Login1.UserName, Login1.Password))
+                    {
                         if (!tryConnectAsEmpoyee(Login1.UserName, Login1.Password))
                         {
                             Response.Redirect(Request.RawUrl);
                         }
+                        else Response.Redirect("~/Users/Pracownik/PracownikForm.aspx");
+                    }
+                    else Response.Redirect("~/Users/Klient/KlientForm.aspx");
+                }
+                else Response.Redirect("~/Users/Admin/AdminForm.aspx");
+            }
+            else Response.Redirect("~/Users/Kierownik/KierownikForm.aspx");
         }
         private bool tryConnectAsBoss(string login,string password)
         {
@@ -44,7 +56,7 @@ namespace WebSQL
         }
         private bool tryConnectAsEmpoyee(string login, string password)
         {
-            string EmployeeQuerry = "select Pr_ID from SklepMuzycznyV2.dbo.Pracownicy where Pr_Imie='@Login' and Pr_Nazwisko='@Password'";
+            string EmployeeQuerry = "select Pr_ID from SklepMuzycznyV2.dbo.Pracownicy where Pr_Imie=@Login and Pr_Nazwisko=@Password";
             int result=GetUserData(EmployeeQuerry,login,password);
             return (result == -1) ? false : true;
         }
@@ -52,7 +64,7 @@ namespace WebSQL
         {
             string KlienciQuerry = "select Kl_ID from SklepMuzycznyV2.dbo.Klienci where Kl_Imie=@Login and Kl_Pesel=@Password";
             int result= GetUserData(KlienciQuerry,login,password);
-            //Response.Redirect();
+
             return (result == -1) ? false : true;
         }
 

@@ -50,23 +50,22 @@ namespace WebSQL.Pracownik
 
         protected void DodajTowarBT_Click(object sender, EventArgs e)
         {
+            Response.Redirect("PracownikDodajTowarForm.aspx");
             //Otwarcie strony DodajTowarForm
         }
 
         protected void DodajWykonawceBT_Click(object sender, EventArgs e)
         {
+
+            Response.Redirect("PracownikDodajWykonawce.aspx");
             //Otwarcie strony DodajWykonawceForm
         }
 
         protected void WylogujBT_Click(object sender, EventArgs e)
         {
-            //powrot do strony logowania
+            Response.Redirect("~/Default.aspx");
         }
 
-        protected void AktualizujBazeBT_Click(object sender, EventArgs e)
-        {
-
-        }
 
         protected void SqlDataSource5_Updated(object sender, SqlDataSourceStatusEventArgs e)
         {

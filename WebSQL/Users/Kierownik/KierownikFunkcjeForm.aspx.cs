@@ -159,7 +159,7 @@ namespace WebSQL.Users.Kierownik
 
         protected void Wyloguj_Click(object sender, EventArgs e)
         {
-            //todo powrot do poprzedniej strony
+            Response.Redirect("~/Default.aspx");
         }
     }
 }

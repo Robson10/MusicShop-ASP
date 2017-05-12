@@ -138,12 +138,15 @@ namespace WebSQL.Klient
                         "values(" + idZamowienia + "," + Rachunek[i].ID + "," + Rachunek[i].IloscTowaru + "," + Rachunek[i].Cena.ToString().Replace(",", ".") + ")";
                     Helper.InsertData(query, "ListaTowarow");
                 }
+                Response.Redirect("~/Users/Klient/KlientForm.aspx");
             }
         }
 
         protected void Anuluj_Click(object sender, EventArgs e)
         {
             //zamkniecie strony i powrot do glownej strony klienta
+
+            Response.Redirect("~/Users/Klient/KlientForm.aspx");
         }
         private void updateCena()
         {            

@@ -13,25 +13,21 @@ namespace WebSQL.Users.Kierownik
         {
 
         }
-
-        protected void ModyfikujKlienciBT_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         protected void ModyfikujPracownicyBT_Click(object sender, EventArgs e)
         {
-
+            GridView1.Visible = !GridView1.Visible;
         }
 
         protected void DodatkoweFunkcjeBT_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("~/Users/Kierownik/KierownikFunkcjeForm.aspx");
         }
 
         protected void WylogujBT_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("~/Default.aspx");
         }
     }
 }

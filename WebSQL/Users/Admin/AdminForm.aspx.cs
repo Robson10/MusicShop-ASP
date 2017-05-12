@@ -68,5 +68,10 @@ namespace WebSQL.Users.Admin
         {
             GridView10.Visible = !GridView10.Visible;
         }
+
+        protected void Button11_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Default.aspx");
+        }
     }
 }

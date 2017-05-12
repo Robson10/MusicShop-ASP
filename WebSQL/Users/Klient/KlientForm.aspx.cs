@@ -61,11 +61,12 @@ namespace WebSQL.Klient
         protected void ZlozZamowienie_Click(object sender, EventArgs e)
         {
             //Przejscie do okna Zloz zamowienie
+            Response.Redirect("~/Users/Klient/KlientZlozZamowienieForm.aspx");
         }
 
         protected void Logout_Click(object sender, EventArgs e)
         {
-            //przejscie do Okna Logowania
+            Response.Redirect("~/Default.aspx");
         }
     }
 }
