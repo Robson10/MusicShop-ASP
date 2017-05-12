@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebSQL.Pracownik {
+namespace WebSQL.Users.Kierownik {
     
     
-    public partial class PracownikForm {
+    public partial class KierownikForm {
         
         /// <summary>
         /// form1 control.
@@ -31,58 +31,22 @@ namespace WebSQL.Pracownik {
         protected global::System.Web.UI.WebControls.Button WylogujBT;
         
         /// <summary>
-        /// PrzegladajDaneKlientowBT control.
+        /// ModyfikujPracownicyBT control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button PrzegladajDaneKlientowBT;
+        protected global::System.Web.UI.WebControls.Button ModyfikujPracownicyBT;
         
         /// <summary>
-        /// PrzegladajZamowieniaBT control.
+        /// DodatkoweFunkcjeBT control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button PrzegladajZamowieniaBT;
-        
-        /// <summary>
-        /// ModyfikujTowarBT control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ModyfikujTowarBT;
-        
-        /// <summary>
-        /// DodajTowarBT control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button DodajTowarBT;
-        
-        /// <summary>
-        /// DodajWykonawceBT control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button DodajWykonawceBT;
-        
-        /// <summary>
-        /// AktualizujBazeBT control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button AktualizujBazeBT;
+        protected global::System.Web.UI.WebControls.Button DodatkoweFunkcjeBT;
         
         /// <summary>
         /// GridView1 control.
@@ -94,12 +58,12 @@ namespace WebSQL.Pracownik {
         protected global::System.Web.UI.WebControls.GridView GridView1;
         
         /// <summary>
-        /// GridView2 control.
+        /// SqlDataSource1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView2;
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
     }
 }

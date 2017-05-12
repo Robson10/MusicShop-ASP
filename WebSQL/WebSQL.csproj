@@ -140,9 +140,14 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="Klient\KlientForm.aspx" />
-    <Content Include="Klient\KlientZlozZamowienieForm.aspx" />
-    <Content Include="Pracownik\PracownikForm.aspx" />
+    <Content Include="Users\Admin\AdminForm.aspx" />
+    <Content Include="Users\Kierownik\KierownikForm.aspx" />
+    <Content Include="Users\Kierownik\KierownikFunkcjeForm.aspx" />
+    <Content Include="Users\Klient\KlientForm.aspx" />
+    <Content Include="Users\Klient\KlientZlozZamowienieForm.aspx" />
+    <Content Include="Users\Pracownik\PracownikDodajTowarForm.aspx" />
+    <Content Include="Users\Pracownik\PracownikDodajWykonawce.aspx" />
+    <Content Include="Users\Pracownik\PracownikForm.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -191,25 +196,60 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helper.cs" />
-    <Compile Include="Klient\KlientForm.aspx.cs">
+    <Compile Include="Users\Admin\AdminForm.aspx.cs">
+      <DependentUpon>AdminForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\Admin\AdminForm.aspx.designer.cs">
+      <DependentUpon>AdminForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\Kierownik\KierownikForm.aspx.cs">
+      <DependentUpon>KierownikForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\Kierownik\KierownikForm.aspx.designer.cs">
+      <DependentUpon>KierownikForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\Kierownik\KierownikFunkcjeForm.aspx.cs">
+      <DependentUpon>KierownikFunkcjeForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\Kierownik\KierownikFunkcjeForm.aspx.designer.cs">
+      <DependentUpon>KierownikFunkcjeForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\Klient\KlientForm.aspx.cs">
       <DependentUpon>KlientForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Klient\KlientForm.aspx.designer.cs">
+    <Compile Include="Users\Klient\KlientForm.aspx.designer.cs">
       <DependentUpon>KlientForm.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Klient\KlientZlozZamowienieForm.aspx.cs">
+    <Compile Include="Users\Klient\KlientZlozZamowienieForm.aspx.cs">
       <DependentUpon>KlientZlozZamowienieForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Klient\KlientZlozZamowienieForm.aspx.designer.cs">
+    <Compile Include="Users\Klient\KlientZlozZamowienieForm.aspx.designer.cs">
       <DependentUpon>KlientZlozZamowienieForm.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Pracownik\PracownikForm.aspx.cs">
+    <Compile Include="Users\Pracownik\PracownikDodajTowarForm.aspx.cs">
+      <DependentUpon>PracownikDodajTowarForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\Pracownik\PracownikDodajTowarForm.aspx.designer.cs">
+      <DependentUpon>PracownikDodajTowarForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\Pracownik\PracownikDodajWykonawce.aspx.cs">
+      <DependentUpon>PracownikDodajWykonawce.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\Pracownik\PracownikDodajWykonawce.aspx.designer.cs">
+      <DependentUpon>PracownikDodajWykonawce.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\Pracownik\PracownikForm.aspx.cs">
       <DependentUpon>PracownikForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pracownik\PracownikForm.aspx.designer.cs">
+    <Compile Include="Users\Pracownik\PracownikForm.aspx.designer.cs">
       <DependentUpon>PracownikForm.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
